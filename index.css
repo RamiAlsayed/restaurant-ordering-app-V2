@@ -1,0 +1,217 @@
+/* body {
+  margin: 0;
+}
+
+.container {
+  padding: 0.4rem;
+  background-color: #3c3c3c;
+  max-width: 50%;
+  height: 850px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.box {
+  background-color: #c7c7c7;
+  height: 700px;
+}
+
+.menu-item {
+  padding: 1rem;
+} */
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Box that contains the menu items */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/* General header styling */
+.header {
+  width: 100%;
+  background-color: #fff; /* You can change this as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Responsive image styling */
+.header {
+  width: 100%;
+  position: relative; /* Position relative because the text will be absolutely positioned within */
+  display: block;
+  overflow: hidden; /* Ensures no overflow of content outside the header */
+}
+
+/* Responsive image styling */
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styling and positioning for header text */
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centers text both horizontally and vertically */
+  color: white; /* Choose a text color that stands out over your image */
+  text-align: center; /* Center the text horizontally */
+  width: 100%;
+}
+
+.header-text h1 {
+  font-size: 2em; /* Large text for the main title */
+  margin: 0.5em 0; /* Spacing around the title */
+}
+
+.header-text p {
+  font-size: 1.2em; /* Smaller text for the subtitle */
+  margin-bottom: 0.5em; /* Bottom margin for spacing */
+}
+
+/* Individual menu items */
+.menu-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 30%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for headers within menu items */
+.menu-item h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+/* List of ingredients and price text styling */
+.menu-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Clickable icon (+) styling */
+.fa-plus {
+  font-size: 24px;
+  color: green;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.fa-plus:hover {
+  color: darkgreen;
+}
+
+/* Box for displaying the ordered items */
+.box2 {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the order box */
+.box2 h2 {
+  margin-top: 0;
+  color: #555;
+}
+
+/* Grand total styling */
+.box2 h3 {
+  color: #d35400;
+  font-size: 22px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.payment-form input[type='text'] {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 90%;
+}
+
+.payment-form input[type='number'] {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 90%;
+}
+
+.payment-form button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background-color: #45a049;
+}
+
+button#completeOrder {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button#completeOrder:hover {
+  background-color: #0056b3;
+}
+
+.thank-you-message {
+  color: darkgreen;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-item {
+    width: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 1.5em;
+  }
+  .header-text p {
+    font-size: 1em;
+  }
+}
